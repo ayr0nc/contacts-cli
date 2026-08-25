@@ -7,7 +7,6 @@
 
 
 int main(int argc,char *argv[]){
-    int editMode = 1;
     contact* head = NULL;
     load(&head);
     int option;
@@ -29,17 +28,12 @@ int main(int argc,char *argv[]){
             case 'f':
                 filter(head, optarg) ;
                 break;
-            case 'e':
-                break;
             case 'n':
-                if (editMode == 1) {
                     editName(&head, optarg, argv[optind]);
-                }
                 break;
             case 'p':
-                if (editMode == 1) {
                     editPhone(head, optarg, atoi(argv[optind]));
-                }
+                break;
             default:
                 printf("\nYou did not put any valid flags\n");
         
