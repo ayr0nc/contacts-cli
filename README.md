@@ -25,4 +25,5 @@ options:
     -n : to edit a contact's name 
          eg : ./contacts -n <name> <new_name>
         
-
+note :
+    be sure to put name and letter in double quotes (" ")
