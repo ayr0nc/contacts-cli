@@ -1,9 +1,7 @@
 Small contact management tool I made in c
 
-creating the executable:
-    ...
+compiling:
     make
-    ...
 
 usage:
     ./contacts [option] [value] [value]
